@@ -1,0 +1,4 @@
+DATASET,NOTES,PK,PATIENT.ID,RAW.DSET.DESCR,RAW.DSET.NAME
+DS3B,,PRIMARY.KEY,Patient.ID,DS3B CARDIAC data 2017,ds3b.cs.2017
+DS6B,,Primary.Key,Patient.ID,DS6B Blood Product Audit 2017,ds6b.icu.2017
+DS7E,,Primary.Key,Patient.ID,DS7E PAM Cardiac Surgery July-Dec 2018,ds7e.pam.JulytoDec.2018

@@ -1,0 +1,46 @@
+DATASET,NOTES,PK,PATIENT.ID,EVENT,CLOSEST.DATE,CLOSEST.DATE.EVENT,HB,HCT,RCC,MCV,RETIC,PRBC,WEIGHT,HAEMOSTAT.INTERVENE,ON.PUMP,PRIMARY.OPERATION,CS.URGENCY,DIAGNOSIS,TREATMENT,RAW.DATA
+DS3B,,PRIMARY.KEY,Patient.ID,HOSP.ADMISSION,ADMISSION_DATE,HOSP.ADMISSION,none,none,none,none,none,none,none,none,none,none,none,none,none,none
+DS3B,,PRIMARY.KEY,Patient.ID,PREOPERATIVE.PATHOLOGY,ADMISSION_DATE,HOSP.ADMISSION,PRE_OP_HAEMOGLOBIN,none,none,none,none,none,none,none,none,none,none,none,none,PRE_OP_HAEMOGLOBIN 
+DS3B,,PRIMARY.KEY,Patient.ID,SURGERY.DIAGNOSIS,SURGERY_DATE,SURGERY,none,none,none,none,none,none,WEIGHT_KGS,FFPUNIT PLATEUNIT CRYOUNIT,none,none,STATUS,VERIFIED.COMMENT,none,WEIGHT_KGS FFPUNIT PLATEUNIT CRYOUNIT STATUS VERIFIED.COMMENT
+DS3B,,PRIMARY.KEY,Patient.ID,SURGERY,SURGERY_DATE,SURGERY,none,none,none,none,none,none,none,none,none,none,none,none,none,none
+DS3B,,PRIMARY.KEY,Patient.ID,SURGERY.TREATMENT,SURGERY_DATE,SURGERY,none,none,none,none,none,none,none,none,CARDIOPULMONARY_BYPASS_USED,none,none,none,CARDIAC_PROCEDURE,CARDIOPULMONARY_BYPASS_USED CARDIAC_PROCEDURE
+DS3B,,PRIMARY.KEY,Patient.ID,INTRAOPERATIVE.PATHOLOGY,SURGERY_DATE,SURGERY,INTRA_OP_HAEMOGLOBIN,none,none,none,none,none,none,none,none,none,none,none,none,INTRA_OP_HAEMOGLOBIN
+DS3B,,PRIMARY.KEY,Patient.ID,POSTOPERATIVE.PATHOLOGY,none,none,POST_OP_HAEMOGLOBIN,none,none,none,none,none,none,none,none,none,none,none,none,POST_OP_HAEMOGLOBIN
+DS.3B,Not useful in this study,PRIMARY.KEY,Patient.ID,PERI.OPERATIVE.PRBC,SURGERY_DATE,SURGERY,none,none,none,none,none,RBCUNIT,none,none,none,none,none,none,none,RBCUNIT
+DS3B,,PRIMARY.KEY,Patient.ID,ICU.ADMISSION,ICU_ADMISSION_DATE_TIME,ICU.ADMISSION,none,none,none,none,none,none,none,none,none,none,none,none,none,none
+DS3B,,PRIMARY.KEY,Patient.ID,HOSP.DISCHARGE,DISCHARGE_DATE,HOSP.DISCHARGE,none,none,none,none,none,none,none,none,none,none,none,none,DISCHARGE_LOCATION,DISCHARGE_LOCATION
+DS3B,,PRIMARY.KEY,Patient.ID,ICU.DISCHARGE,ICU_DISCHARGE_DATE_TIME,ICU.DISCHARGE,none,none,none,none,none,none,none,none,none,none,none,none,none,none
+DS3B,,PRIMARY.KEY,Patient.ID,POSTOPERATIVE.MORTALITY,MORTALITY_DATE,HOSP.DISCHARGE,none,none,none,none,none,none,none,none,none,none,none,MORTALITY_LOCATION MORTALITY_PRIMARY_CAUSE MORTALITY_SUBSEQUENT_CAUSE,none,MORTALITY_LOCATION MORTALITY_PRIMARY_CAUSE MORTALITY_SUBSEQUENT_CAUSE
+DS6B,,Primary.Key,Patient.ID,PREOPERATIVE.PATHOLOGY,none,none,Bloods.Pre.Op.Hb,Bloods.Pre.Op.HCT,none,none,none,none,none,none,none,none,none,none,none,Bloods.Pre.Op.Hb Bloods.Pre.Op.HCT
+DS6B,,Primary.Key,Patient.ID,SURGERY.DIAGNOSIS,OP.Date,SURGERY,none,none,none,none,none,none,Weight..kg.,FFP.1 Plt.1 CRYO.1 CRYA.1 ELP.1 Prothrombinex.1 Fibrinogen..Dose..1 DDAVP.1,none,none,none,Comments,none,Weight..kg. FFP.1 Plt.1 CRYO.1 CRYA.1 ELP.1 Prothrombinex.1 Fibrinogen..Dose..1 DDAVP.1 Comments
+DS6B,,Primary.Key,Patient.ID,SURGERY,OP.Date,SURGERY,none,none,none,none,none,none,none,none,none,none,none,none,none,none
+DS6B,,Primary.Key,Patient.ID,SURGERY.TREATMENT,OP.Date,SURGERY,none,none,none,none,none,none,none,none,none,none,none,none,Procedure,Procedure
+DS6B,,Primary.Key,Patient.ID,INTRAOPERATIVE.PRBC,OP.Date,SURGERY,none,none,none,none,none,PRC Haemostasis.Mgt.MOT.RBC,none,none,none,none,none,none,none,PRC Haemostasis.Mgt.MOT.RBC
+DS.6B,,Primary.Key,Patient.ID,POSTOPERATIVE.PRBC,none,none,none,none,none,none,none,Haemostasis.Mgt.ICU.RBC Haemostasis.Mgt.Ward.RBC,none,none,none,none,none,none,none,Haemostasis.Mgt.ICU.RBC Haemostasis.Mgt.Ward.RBC
+DS6B,,Primary.Key,Patient.ID,POSTOPERATIVE.PATHOLOGY,none,none,Bloods.Post.Op.Hb,none,none,none,none,none,none,none,none,none,none,none,none,Bloods.Post.Op.Hb
+DS6B,,Primary.Key,Patient.ID,ICU.ADMISSION,ICU.Adm.Date.Time,ICU.ADMISSION,none,none,none,none,none,none,none,none,none,none,none,none,none,none
+DS6B,,Primary.Key,Patient.ID,FINAL.PATHOLOGY,none,none,Last.Hb,none,none,none,none,none,none,none,none,none,none,none,none,Last.Hb
+DS6B,,Primary.Key,Patient.ID,ICU.PRBC,ICU.Adm.Date.Time,ICU.ADMISSION,none,none,none,none,none,Haemostasis.Mgt.ICU.RBC,none,none,none,none,none,none,none,Haemostasis.Mgt.ICU.RBC
+DS6B,,Primary.Key,Patient.ID,WARD.PRBC,none,none,none,none,none,none,none,Haemostasis.Mgt.Ward.RBC,none,none,none,none,none,none,none,Haemostasis.Mgt.Ward.RBC
+DS7E,,Primary.Key,Patient.ID,SURGERY.WAITLIST,Date.Waitlisted,SURGERY.WAITLIST,none,none,none,none,none,none,none,none,none,none,none,none,none,none
+DS7E,,Primary.Key,Patient.ID,PAM.ADMISSION,Date.referred.to.CNC,PAM.ADMISSION,none,none,none,none,none,none,none,none,none,none,none,none,none,none
+DS7E,,Primary.Key,Patient.ID,PAM.INITIAL.PATHOLOGY,Date.referred.to.CNC,PAM.ADMISSION,Hb,none,RCC,MCV,none,none,none,none,none,none,none,none,none,Hb RCC MCV
+DS7E,,Primary.Key,Patient.ID,PAM.INITIAL.PATHOLOGY,Date.of.Contact,PAM.INITIAL.CONTACT,Hb,none,RCC,MCV,none,none,none,none,none,none,none,none,none,Hb RCC MCV
+DS7E,,Primary.Key,Patient.ID,PATHOLOGY,Pathology.Date,PAM.INITIAL.PATHOLOGY,Hb,none,RCC,MCV,none,none,none,none,none,none,none,none,none,Hb RCC MCV
+DS7E,,Primary.Key,Patient.ID,PAM.DIAGNOSIS,Date.referred.to.CNC,PAM.ADMISSION,none,none,none,none,none,none,none,none,none,none,Surgical.Category..1..2..3.,Anaemia.Type..eg..IDA..Unknown.origin.,none,Surgical.Category..1..2..3. Anaemia.Type..eg..IDA..Unknown.origin.
+DS7E,,Primary.Key,Patient.ID,PAM.DIAGNOSIS,Date.of.Contact,PAM.INITIAL.CONTACT,none,none,none,none,none,none,none,none,none,none,Surgical.Category..1..2..3.,Anaemia.Type..eg..IDA..Unknown.origin.,none,Surgical.Category..1..2..3. Anaemia.Type..eg..IDA..Unknown.origin.
+DS.7E,,Primary.Key,Patient.ID,PAM.DIAGNOSIS,Pathology.Date,PAM.INITIAL.PATHOLOGY,none,none,none,none,none,none,none,none,none,none,Surgical.Category..1..2..3.,Anaemia.Type..eg..IDA..Unknown.origin.,none,Surgical.Category..1..2..3. Anaemia.Type..eg..IDA..Unknown.origin.
+DS7E,,Primary.Key,Patient.ID,PAM.TREATMENT,Date.referred.to.CNC,PAM.ADMISSION,none,none,none,none,none,none,none,none,none,none,none,none,Treatment..eg..Iron.PO..IV..EPO..GP...Specialist.referral If.Required...DUIT.Appointment.Date DUIT.Booked Specialist.Details..Type...Appt..Date.,none
+DS7E,,Primary.Key,Patient.ID,PAM.TREATMENT,Date.of.Contact,PAM.INITIAL.CONTACT,none,none,none,none,none,none,none,none,none,none,none,none,Treatment..eg..Iron.PO..IV..EPO..GP...Specialist.referral If.Required...DUIT.Appointment.Date DUIT.Booked Specialist.Details..Type...Appt..Date.,none
+DS7E,,Primary.Key,Patient.ID,PAM.TREATMENT,Treatment..eg..Iron.PO..IV..EPO..GP...Specialist.referral If.Required...DUIT.Appointment.Date DUIT.Booked Specialist.Details..Type...Appt..Date.,PAM.TREATMENT,none,none,none,none,none,none,none,none,none,none,none,none,Treatment..eg..Iron.PO..IV..EPO..GP...Specialist.referral If.Required...DUIT.Appointment.Date DUIT.Booked Specialist.Details..Type...Appt..Date.,none
+DS7E,,Primary.Key,Patient.ID,PAM.FOLLOW.UP.PATHOLOGY,Follow.up.Pathology.Date,PAM.FOLLOW.UP.PATHOLOGY,Hb.1,none,RCC.1,MCV.1,Retic,none,none,none,none,none,none,none,none,Hb.1 RCC.1 MCV.1 Retic
+DS7E,,Primary.Key,Patient.ID,PAM.TREATMENT.CURTAIL,Date.referred.to.CNC,PAM.ADMISSION,none,none,none,none,none,none,none,none,none,none,none,all.cols ((book|treat|tx).*(before|pri).*(assess|complet)),none,none
+DS7E,,Primary.Key,Patient.ID,PAM.TREATMENT.CURTAIL,Date.of.Contact,PAM.INITIAL.CONTACT,none,none,none,none,none,none,none,none,none,none,none,all.cols ((book|treat|tx).*(before|pri).*(assess|complet)),none,none
+DS7E,,Primary.Key,Patient.ID,PAM.TREATMENT.CURTAIL,Treatment..eg..Iron.PO..IV..EPO..GP...Specialist.referral If.Required...DUIT.Appointment.Date DUIT.Booked Specialist.Details..Type...Appt..Date.,PAM.TREATMENT,none,none,none,none,none,none,none,none,none,none,none,all.cols ((book|treat|tx).*(before|pri).*(assess|complet)),none,none
+DS7E,,Primary.Key,Patient.ID,PAM.TREATMENT.CURTAIL,Follow.up.Pathology.Date,PAM.FOLLOW.UP.PATHOLOGY,none,none,none,none,none,none,none,none,none,none,none,all.cols ((book|treat|tx).*(before|pri).*(assess|complet)),none,none
+DS.7E,,Primary.Key,Patient.ID,PAM.TREATMENT.CURTAIL,Surgery.Date,SURGERY,none,none,none,none,none,none,none,none,none,none,none,all.cols ((book|treat|tx).*(before|pri).*(assess|complet)),none,none
+DS7E,,Primary.Key,Patient.ID,PREOPERATIVE.MORTALITY,Follow.up.Pathology.Date,PAM.FOLLOW.UP.PATHOLOGY,none,none,none,none,none,none,none,none,none,none,none,all.cols (deceas),none,none
+DS7E,,Primary.Key,Patient.ID,PREOPERATIVE.MORTALITY,Date.of.Contact,PAM.INITIAL.CONTACT,none,none,none,none,none,none,none,none,none,none,none,all.cols (deceas),none,none
+DS7D,,Primary.Key,Patient.ID,HOSP.PRE.ADMISSION.PATHOLOGY,Preadmission.Clinic.Date,HOSP.PRE.ADMISSION,Preop.Hb,none,none,none,none,none,none,none,none,none,none,none,none,Preop.Hb
+DS7E,,Primary.Key,Patient.ID,HOSP.PRE.ADMISSION,Preadmission.Clinic.Date,HOSP.PRE.ADMISSION,none,none,none,none,none,none,none,none,none,none,none,none,none,none
+DS7E,,Primary.Key,Patient.ID,PREOPERATIVE.PATHOLOGY,Date.of.Admission,HOSP.ADMISSION,Preop.Hb,none,none,none,none,none,none,none,none,none,none,none,none,Preop.Hb
