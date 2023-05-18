@@ -21,7 +21,7 @@
 <div class="container">
 <center>
 		<h1>Upload CSV to MySQL</h1>
-	<form action="try4.php" method="POST" enctype="multipart/form-data">
+	<form action="import_csv.php" method="POST" enctype="multipart/form-data">
 		<label for="csvFile">CSV file:</label>
 		<input type="file" name="file"><br>
 		<input type="submit" name="submit" value="submit">
