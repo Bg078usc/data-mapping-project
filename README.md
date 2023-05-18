@@ -1,6 +1,8 @@
 # data-mapping-project
+Make sure you have latest version of files in your device. (Check the code from files of Github and your device.)
 
-Upload.php will help to provide a webpage to upload a csv file.
+
+Upload.php will help to provide a webpage to upload a csv file. Once you submit the file, it will redirect to import_csv.php.  
 
 
 import_csv.php
